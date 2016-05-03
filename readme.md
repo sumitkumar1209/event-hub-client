@@ -11,7 +11,7 @@ Simple Azure EventHub Client.  Uses REST API for Create/Send operations, trying 
             eventHubName,
             sharedAccessKeyName,
             sharedAccessKey);
-        client.sendMessage('{ "device": "laptop", "message": "My message body." }');
+        client.sendMessage('{ "device": "laptop", "message": "My message body." }', function(err,res){console.log(err,res)});
     }
 
 ## Caveats
